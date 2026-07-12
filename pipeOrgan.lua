@@ -1,13 +1,13 @@
-print("Pipe Organ Song")
+print("Pipe Organ Song Template")
 
 local bridge = peripheral.find("redstone_link_bridge")
 
 if not bridge then
-    print("Fehler: Keine Redstone Link Bridge gefunden!")
+    print("Fehler: No redstone link bridge was found!")
     return
 end
 
--- Oktave 1
+-- chord 1
 local c1    = { "minecraft:dirt", "minecraft:blue_dye" }
 local cis1  = { "minecraft:dirt", "minecraft:light_blue_dye" }
 local d1    = { "minecraft:dirt", "minecraft:cyan_dye" }
@@ -21,7 +21,7 @@ local a1    = { "minecraft:dirt", "minecraft:light_gray_dye" }
 local ais1  = { "minecraft:dirt", "minecraft:white_dye" }
 local h1    = { "minecraft:dirt", "minecraft:black_dye" }
 
--- Oktave 2
+-- chord 2
 local c2    = { "minecraft:cobblestone", "minecraft:blue_dye" }
 local cis2  = { "minecraft:cobblestone", "minecraft:light_blue_dye" }
 local d2    = { "minecraft:cobblestone", "minecraft:cyan_dye" }
@@ -35,7 +35,7 @@ local a2    = { "minecraft:cobblestone", "minecraft:light_gray_dye" }
 local ais2  = { "minecraft:cobblestone", "minecraft:white_dye" }
 local h2    = { "minecraft:cobblestone", "minecraft:black_dye" }
 
--- Oktave 3
+-- chord 3
 local c3    = { "minecraft:deepslate", "minecraft:blue_dye" }
 local cis3  = { "minecraft:deepslate", "minecraft:light_blue_dye" }
 local d3    = { "minecraft:deepslate", "minecraft:cyan_dye" }
@@ -49,8 +49,9 @@ local a3    = { "minecraft:deepslate", "minecraft:light_gray_dye" }
 local ais3  = { "minecraft:deepslate", "minecraft:white_dye" }
 local h3    = { "minecraft:deepslate", "minecraft:black_dye" }
 
--- Oktave 
+-- chord 4
 local c4    = { "minecraft:deepslate", "minecraft:lime_dye" }
+
 
 
 local function send(frequency, power)
@@ -61,24 +62,24 @@ end
 
 
 -- ==========================================
--- AB HIER MELODIE BAUEN!!!!!
+-- Here you can write the melody
 -- ==========================================
 
 
-
-send(c1, 15)
-os.sleep(0.5)
-send(c1, 0)
-
-
+-- single note
+send(c1, 15)    --(start c1 note)
+os.sleep(0.5)   -- (0.5 seconds)
+send(c1, 0)     --(stop c1 note)
 
 
-send(c1, 15)   -- C1 an
-send(e1, 15)   -- E1 an
-send(g1, 15)   -- G1 an
 
-os.sleep(1.0)  -- Alle drei Töne halten (1 Sekunde lang)
+-- chord
+send(c1, 15)   -- start 3 notes 
+send(e1, 15)    
+send(g1, 15)   
 
-send(c1, 0)    -- Alle wieder aus
+os.sleep(1.0)  -- duration of all 3 notes (1 second)
+
+send(c1, 0)    -- stop all notes
 send(e1, 0)
 send(g1, 0)
