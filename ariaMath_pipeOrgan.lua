@@ -36,21 +36,21 @@ local ais2  = { "minecraft:cobblestone", "minecraft:white_dye" }
 local h2    = { "minecraft:cobblestone", "minecraft:black_dye" }
 
 -- chord 3
-local c3    = { "minecraft:deepslate", "minecraft:blue_dye" }
-local cis3  = { "minecraft:deepslate", "minecraft:light_blue_dye" }
-local d3    = { "minecraft:deepslate", "minecraft:cyan_dye" }
-local dis3  = { "minecraft:deepslate", "minecraft:green_dye" }
-local e3    = { "minecraft:deepslate", "minecraft:pink_dye" }
-local f3    = { "minecraft:deepslate", "minecraft:purple_dye" }
-local fis3  = { "minecraft:deepslate", "minecraft:orange_dye" }
-local g3    = { "minecraft:deepslate", "minecraft:yellow_dye" }
-local gis3  = { "minecraft:deepslate", "minecraft:red_dye" }
-local a3    = { "minecraft:deepslate", "minecraft:light_gray_dye" }
-local ais3  = { "minecraft:deepslate", "minecraft:white_dye" }
-local h3    = { "minecraft:deepslate", "minecraft:black_dye" }
+local c3    = { "minecraft:cobbled_deepslate", "minecraft:blue_dye" }
+local cis3  = { "minecraft:cobbled_deepslate", "minecraft:light_blue_dye" }
+local d3    = { "minecraft:cobbled_deepslate", "minecraft:cyan_dye" }
+local dis3  = { "minecraft:cobbled_deepslate", "minecraft:green_dye" }
+local e3    = { "minecraft:cobbled_deepslate", "minecraft:pink_dye" }
+local f3    = { "minecraft:cobbled_deepslate", "minecraft:purple_dye" }
+local fis3  = { "minecraft:cobbled_deepslate", "minecraft:orange_dye" }
+local g3    = { "minecraft:cobbled_deepslate", "minecraft:yellow_dye" }
+local gis3  = { "minecraft:cobbled_deepslate", "minecraft:red_dye" }
+local a3    = { "minecraft:cobbled_deepslate", "minecraft:light_gray_dye" }
+local ais3  = { "minecraft:cobbled_deepslate", "minecraft:white_dye" }
+local h3    = { "minecraft:cobbled_deepslate", "minecraft:black_dye" }
 
 -- chord 4
-local c4    = { "minecraft:deepslate", "minecraft:lime_dye" }
+local c4    = { "minecraft:cobbled_deepslate", "minecraft:lime_dye" }
 
 
 
